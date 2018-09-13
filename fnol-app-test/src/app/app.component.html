@@ -1,0 +1,9 @@
+<app-header (optionSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <app-fnol-page *ngIf="loadedFeature === 'fnol-tool'">
+        </app-fnol-page>
+    </div>
+  </div>
+</div>

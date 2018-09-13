@@ -1,0 +1,14 @@
+<hr>
+<form action="" name="FnolForm">
+  <label for="messages">Message Files:</label>
+  <input type="file" class="form-control" id="messages" accept=".xls" multiple (change)="readMultipleFiles($event)" required>
+  <label for="excelFolder">Claims File:</label>
+  <input type="file" class="form-control" id="excelFolder" (change)="getClaimsData($event)" accept=".xlsx" required>
+  <label for="deviceReport">Device Report:</label>
+  <input type="file" class="form-control" id="deviceReport" (change)="getDeviceReportData($event)" accept=".csv" required>
+  <br>
+  <button type="button" class="btn btn-info" (click)="writeXmlFile()" id="fnolSubmit" disabled>Upload</button>
+</form>
+<hr>
+<p *ngIf="showLoad">TEST</p>
+
