@@ -11,7 +11,6 @@ type AOA = any[][];
 })
 export class FnolPageComponent
 {
-  showLoad = false;
   showLoadingDiv = false;
   deviceReportDetails: any[][] = new Array();
   faultyListFull: any[][] = new Array();
